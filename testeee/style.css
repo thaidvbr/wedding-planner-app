@@ -1,0 +1,274 @@
+body {
+  margin: 0;
+  font-family: 'Poppins', sans-serif;
+  color: #333;
+}
+
+/* MENU */
+.menu {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 15px 40px;
+  background: linear-gradient(45deg, #2f80ed, #a0d8ff);
+}
+
+/* LOGO */
+.logo {
+  font-size: 26px;
+  font-weight: 700;
+  font-family: 'Playfair Display', serif;
+  color: white;
+}
+
+/* LINKS */
+.links a {
+  margin-left: 20px;
+  text-decoration: none;
+  color: white;
+  font-size: 14px;
+}
+
+/* LOGIN */
+.login {
+  background: white;
+  color: #2f80ed !important;
+  padding: 6px 14px;
+  border-radius: 8px;
+  font-weight: 500;
+}
+
+/* TEXTO TOPO */
+.topo-texto {
+  position: absolute;
+  top: 140px;
+  right: 40px;
+  width: 300px;
+  font-size: 13px;
+  color: #444;
+  text-align: right;
+  line-height: 1.5;
+}
+
+/* HOME */
+.inicio {
+  height: calc(100vh - 70px);
+  background:
+    linear-gradient(rgba(255,255,255,0.5), rgba(255,255,255,0.5)),
+    url("imagem.png");
+  background-size: cover;
+  background-position: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+}
+
+/* CENTRO */
+.centro {
+  text-align: center;
+  width: 550px;
+}
+
+/* TITULO PRINCIPAL */
+.centro h1 {
+  font-size: 34px;
+  margin-bottom: 15px;
+  font-family: 'Playfair Display', serif;
+  font-weight: 700;
+  letter-spacing: 0.5px;
+
+  background: linear-gradient(45deg, #2f80ed, #6bbcff);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+/* TEXTO */
+.centro p {
+  font-size: 15px;
+  color: #444;
+  line-height: 1.7;
+}
+
+/* BOTÃO */
+.botao {
+  margin-top: 25px;
+  padding: 12px 30px;
+  border: none;
+  border-radius: 10px;
+  background: linear-gradient(45deg, #2f80ed, #6bbcff);
+  color: white;
+  font-weight: 500;
+  cursor: pointer;
+  box-shadow: 0 8px 20px rgba(47, 128, 237, 0.4);
+  transition: 0.3s;
+}
+
+.botao:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 12px 25px rgba(47, 128, 237, 0.6);
+}
+
+/* TEXTOS LATERAIS */
+.lado {
+  position: absolute;
+  width: 260px;
+  font-size: 12px;
+  color: #444;
+  line-height: 1.5;
+}
+
+.esquerdo {
+  left: 30px;
+  bottom: 60px;
+}
+
+.direita {
+  right: 30px;
+  bottom: 60px;
+  text-align: right;
+}
+
+/* LOGIN AREA */
+.login-area {
+  height: calc(100vh - 70px);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+/* TITULOS LOGIN */
+.titulo-login {
+  font-family: 'Playfair Display', serif;
+  font-size: 34px; /* aumentei um pouco */
+  font-weight: 700;
+  margin-bottom: 10px;
+
+  /* DEGRADÊ IGUAL DO SITE */
+  background: linear-gradient(45deg, #2f80ed, #6bbcff);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+
+  /* SOMBRA PRA NÃO SUMIR */
+  text-shadow: 
+    2px 2px 8px rgba(0,0,0,0.5),
+    0 0 10px rgba(47,128,237,0.6);
+
+  letter-spacing: 1px;
+}
+
+.login-area h3 {
+  font-weight: 400;
+  color: #555;
+  margin-bottom: 20px;
+}
+
+/* CARD */
+.card-login {
+  width: 350px;
+  padding: 25px;
+  background: rgba(255, 255, 255, 0.96);
+  border-radius: 12px;
+  backdrop-filter: blur(6px);
+  box-shadow: 0 10px 30px rgba(0,0,0,0.2);
+}
+
+/* INPUTS */
+.card-login input {
+  width: 100%;
+  padding: 10px;
+  margin: 8px 0 15px 0;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+}
+
+/* GOOGLE */
+.google-btn {
+  width: 100%;
+  padding: 10px;
+  background: white;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+}
+
+.google-btn img {
+  width: 18px;
+}
+
+/* TEXTOS */
+.ou {
+  margin: 15px 0;
+  color: #888;
+}
+
+.esqueci {
+  font-size: 12px;
+  color: #2f80ed;
+  display: block;
+  text-align: right;
+  margin-bottom: 15px;
+}
+
+.entrar {
+  width: 100%;
+  padding: 12px;
+  background: linear-gradient(45deg, #2f80ed, #6bbcff);
+  color: white;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+}
+
+.cadastro {
+  margin-top: 15px;
+  font-size: 12px;
+}
+
+/* ERRO */
+.erro-login {
+  color: #e74c3c;
+  font-size: 13px;
+  margin-top: -10px;
+  margin-bottom: 10px;
+  text-align: left;
+}
+
+/* FUNDO COM SLIDES */
+.bg-slider {
+  min-height: 100vh;
+  background-size: cover;
+  background-position: center;
+  background-image: url("img1.png");
+  animation: slideBg 25s infinite ease-in-out;
+}
+
+body.bg-slider {
+  display: flex;
+  flex-direction: column;
+}
+
+.login-area {
+  flex: 1;
+}
+
+/* ANIMAÇÃO */
+@keyframes slideBg {
+  0%   { background-image: url("img1.png"); }
+  20%  { background-image: url("img2.png"); }
+  40%  { background-image: url("img3.png"); }
+  60%  { background-image: url("img4.png"); }
+  80%  { background-image: url("img5.png"); }
+  100% { background-image: url("img1.png"); }
+}
+
+.bg-slider {
+  animation: slideBg 25s infinite;
+  transition: background-image 1s ease-in-out;
+}
+
